@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-const midiv = document.getElementById("midiv");
+    const midiv = document.querySelector("div");
+    const boton = document.querySelector("button");
 
-function myFunction() {
-    alert("Hola!");
-}
+    boton.addEventListener("click", (e) => {
+        alert("Hola!");
+        e.stopPropagation();
+    });
 
-midiv.addEventListener('click', () => {
-    alert('Hola! Soy el div');
-});
+    midiv.addEventListener('click', (e) => {
+        alert('Hola! Soy el div');
+        e.stopPropagation();
+    });
 });

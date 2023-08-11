@@ -1,9 +1,12 @@
-let div = document.getElementById("MiDiv");
+document.addEventListener("DOMContentLoaded", function () {
+
+const midiv = document.getElementById("midiv");
 
 function myFunction() {
     alert("Hola!");
 }
 
-div.addEventListener('click', () => {
+midiv.addEventListener('click', () => {
     alert('Hola! Soy el div');
+});
 });
